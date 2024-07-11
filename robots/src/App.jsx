@@ -4,6 +4,7 @@ import SearchBox from './SearchBox';
 import 'tachyons';
 import { robots } from './robots';
 import './index.css';
+import './App.css'
 
 const App = () => {
     const [searchField, setSearchField] = useState('');

@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Super Mario 64 Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Super Mario 64 Regular'), url('Super Mario 64.woff') format('woff');
+    }
+
+    
+    @keyframes colorChange {
+        0% { color: #ff6b6b; }
+        25% { color: #f7d794; }
+        50% { color: #6a82fb; }
+        75% { color: #fc5c7d; }
+        100% { color: #ff6b6b; }
+    }
+
+    @keyframes backgroundChange {
+        0% { background: linear-gradient(45deg, #ff6b6b, #f7d794); }
+        25% { background: linear-gradient(45deg, #f7d794, #6a82fb); }
+        50% { background: linear-gradient(45deg, #6a82fb, #fc5c7d); }
+        75% { background: linear-gradient(45deg, #fc5c7d, #ff6b6b); }
+        100% { background: linear-gradient(45deg, #ff6b6b, #f7d794); }
+    }
+
+    h1 {
+        font-family: 'Super Mario 64 Regular';
+        font-size: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 50px 0;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        animation: colorChange 5s infinite, backgroundChange 5s infinite;
+    }
+
+    h1:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    
